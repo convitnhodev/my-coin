@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container>div:first-child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+
+}
+
+.container>div:first-child img {
+  width: 100px;
+}
+
+.container>div:first-child h1 {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 30px;
+  background: linear-gradient(to right, #fba801, #191606);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.returnLanding {
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 0px;
+  top: 0px;
+  right: 10px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #f5f5f5;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.returnLanding:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+  color: rgb(0, 0, 0);
+  transform: translateY(-2px);
+}
+
+
+.card-layout {
+  width: 50rem;
+  margin-top: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.card-layout:hover {
+  transform: translateY(-5px);
+  background-color: transparent;
+}
+
+.slide-up {
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide-down {
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.container h2 {
+  font-size: 30px;
+}
+
+.avatar-nav {
+  border-radius: 5px;
+  margin: 5px;
+  background-image: url("https://mewcard.mewapi.io/?address=0xb7c90a73ec8c1e9a585c3decdd5776b0634d9db2");
+  background-repeat: no-repeat;
+}
+
+.portfolio-menu {
+  color: white;
+  font-weight: bolder;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.portfolio-menu:hover {
+  background-color: rgba(249, 249, 249, 0.1);
+}
+
+.copyBtn {
+  background-color: rgba(83, 83, 83, 0.1);
+}
+
+.card-dashboard {
+  margin: 5px;
+  border: 2px solid rgba(16, 13, 13, 0.1);
+  height: 8rem;
+}
