@@ -13,7 +13,7 @@ const AccessKeystoreCard: React.FC = () => {
       }}
     >
       <Meta
-        avatar={<FaFileCode size={60} color="#fba801" />}
+        avatar={<FaFileCode size={60} color="#359ECA" />}
         title="Keystore File"
         description={" Using a keystore file to access your wallet. "}
       />

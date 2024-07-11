@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import CloseButton from "../../components/button/CloseButton";
 import CreateByKeystorePage from "./ByKeystore";
-import CreateByMnemonicPhrasePage from "./ByPhrase";
 import ChooseMethodPage from "./ChooseMethod";
 import ReturnButton from "../../components/button/ReturnButton";
 
@@ -24,9 +23,6 @@ const CreatePage: React.FC = () => {
   switch (routeHash) {
     case "keystore":
       componentToRender = <CreateByKeystorePage />;
-      break;
-    case "phrase":
-      componentToRender = <CreateByMnemonicPhrasePage />;
       break;
     default:
       componentToRender = <ChooseMethodPage />;

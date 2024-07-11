@@ -13,7 +13,7 @@ const CreateKeystoreCard: React.FC = () => {
       }}
     >
       <Meta
-        avatar={<FaFileCode size={60} color="#fba801" />}
+        avatar={<FaFileCode size={60} color="#359ECA" />}
         title="Keystore File"
         description={
           " Using a keystore file online makes your wallet more vulnerable to loss of funds. We don’t recommend this method of wallet creation. "

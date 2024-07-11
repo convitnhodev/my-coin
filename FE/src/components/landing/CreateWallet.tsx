@@ -15,7 +15,7 @@ const CreateWalletCard: React.FC = () => {
       }}
     >
       <Meta
-        avatar={<FaWallet size={60} color="#fba801" />}
+        avatar={<FaWallet size={60} color="#359ECA" />}
         title="Create new Wallet"
         description={
           "Create a new wallet securely by generating a Keystore File or Mnemonic Phrase. " +

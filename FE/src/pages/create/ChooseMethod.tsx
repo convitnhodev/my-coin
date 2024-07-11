@@ -1,5 +1,4 @@
 import CreateKeystoreCard from "../../components/create/Keystore";
-import CreateMnemonicPhraseCard from "../../components/create/MnemonicPhrase";
 
 const ChooseMethodPage: React.FC = () => {
   return (
@@ -10,7 +9,6 @@ const ChooseMethodPage: React.FC = () => {
 
       <div>
         <CreateKeystoreCard />
-        <CreateMnemonicPhraseCard />
       </div>
     </>
   );

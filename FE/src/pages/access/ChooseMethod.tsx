@@ -1,6 +1,4 @@
 import AccessKeystoreCard from "../../components/access/Keystore";
-import AccessMnemonicPhraseCard from "../../components/access/MnemonicPhrase";
-import AccessPrivateKeyCard from "../../components/access/PrivateKey";
 
 const ChooseMethodPage: React.FC = () => {
   return (
@@ -11,8 +9,6 @@ const ChooseMethodPage: React.FC = () => {
 
       <div>
         <AccessKeystoreCard />
-        <AccessMnemonicPhraseCard />
-        <AccessPrivateKeyCard />
       </div>
     </>
   );

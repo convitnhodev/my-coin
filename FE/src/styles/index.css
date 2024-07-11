@@ -38,7 +38,7 @@ body {
   font-size: 3rem;
   font-weight: bolder;
   margin-bottom: 30px;
-  background: linear-gradient(to right, #fba801, #191606);
+  background: linear-gradient(to right, #359ECA, #191606);
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
