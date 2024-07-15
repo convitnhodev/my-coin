@@ -1,12 +1,17 @@
 import { Button, Divider, Form, InputNumber, notification } from "antd";
 import { useAuth } from "../../provider/authContext";
 import axiosInstance from "../../configs/axios.config";
+import { useState } from "react";
 
 const BuyPage: React.FC = () => {
-  const amountSpend = 10;
+  const [amountSpend, setAmountSpend] = useState<number>(0);
 
   const { getWalletAddress } = useAuth();
   const walletAddress = getWalletAddress();
+
+  const handleSetAmount = async (values: { buyMC: number }) => {
+    setAmountSpend(values.buyMC * 10);
+  };
 
   const handleBuy = async (values: { buyMC: number }) => {
     try {
@@ -76,22 +81,27 @@ const BuyPage: React.FC = () => {
       <div>
         <h1>Buy MC</h1>
         <Divider />
-        <Form name="buyMCForm" layout="vertical" onFinish={handleBuy}>
+        <Form
+          name="buyMCForm"
+          layout="vertical"
+          onValuesChange={handleSetAmount}
+          onFinish={handleBuy}
+        >
           <Form.Item
-            label="Buy MC"
+            label="USD is used to buy MC"
             name="buyMC"
             rules={[
-              { required: true, message: "Please enter mc want to buy" },
+              { required: true, message: "Please enter usd to buy mc" },
               {
                 type: "number",
                 min: 1,
-                message: "MC must be at least 1",
+                message: "USD must be at least 1",
               },
             ]}
           >
             <InputNumber style={{ width: "100%" }} name="buyMC" />
           </Form.Item>
-          <p>Amount spent: {amountSpend} $</p>
+          <p>MC received: {amountSpend} MC</p>
           <Form.Item>
             <Button type="primary" htmlType="submit" style={{ width: "100%" }}>
               Buy
